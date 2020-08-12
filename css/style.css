@@ -1,26 +1,114 @@
+
+.firstimg,
+.secondimg,
+.thirdimg,
+.forthimg {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    /*
+    fixed = parallax
+    scroll = normal
+  */
+    background-attachment: fixed;
+}
+
+.firstimg {
+    background-image: url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg);
+    min-height: 100%;
+}
+
+.secondimg {
+    background-image: url(https://images.pexels.com/photos/1342460/pexels-photo-1342460.jpeg);
+    min-height: 400px;
+}
+
+.thirdimg {
+    background-image: url(https://images.pexels.com/photos/34580/pexels-photo.jpg);
+    min-height: 400px;
+}
+
+.forthimg {
+    background-image: url(https://images.pexels.com/photos/248515/pexels-photo-248515.png);
+    min-height: 100%;
+}
+.background {
+    background: linear-gradient(90deg, #ce003d, #2e4bc6, #F0F010, #03a9f4);
+    background-size: 400%;
+    animation: gradient 7s ease infinite;
+}
+@keyframes gradient{
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
+
 body {
   box-sizing: border-box;
   font-family: "Barlow Condensed", sans-serif;
-  color: #242424;
+  color: #232323;
   width: 100%;
   background-color: white;
   text-align: center;
   font-size: 1.4rem;
 }
+a {
+    color:black; 
+}
+.aa {
+    color: #151616;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 30px;
+    z-index:1;
+}
+    
 
+    a:hover {
+        animation: animate 8s linear infinite;
+    }
+    @keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 200%;
+    }
+}
+
+a:before {
+    content: '';
+
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    filter: blur(20px);
+
+}       
 .navbar {
-  background-color: #242424;
+        background-color: #242424;
 }
 
 h2,
 h5,
-h6,
+h6,i,
 #sideNav,
 .family-name,
 .fa-user-tag,
 .list-inline-item i:hover,
 .linkedin-link a {
-  color: #151616;
+  color: black ;
 }
 
 h2,
