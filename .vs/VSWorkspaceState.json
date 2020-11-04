@@ -3,9 +3,8 @@
     "",
     "\\bootstrap",
     "\\bootstrap\\css",
-    "\\css",
-    "\\img"
+    "\\functions"
   ],
-  "SelectedNode": "\\bootstrap",
+  "SelectedNode": "\\functions\\index.js",
   "PreviewInSolutionExplorer": false
 }
