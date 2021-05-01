@@ -20,10 +20,10 @@
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
-            $('.navbar-brand img').attr('src', 'img/01.png');
+            $('.navbar-brand img').attr('src', 'img/blue-01.png');
         } else {
             $('.back-to-top').fadeOut('slow');
-            $('.navbar-brand img').attr('src', 'img/03.png');
+            $('.navbar-brand img').attr('src', 'img/white-01.png');
         }
     });
     $('.back-to-top').click(function() {

@@ -20,12 +20,15 @@
     <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
 </head>
 
 <body id="page-top">
     <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll" href="#page-top"><img src="img/01.png" alt="" style="height: 100px; overflow: hidden;" class="imageon"></a>
+            <a class="navbar-brand js-scroll" href="#page-top"><img src="img/white-01.png" alt="" style="height: 70px; overflow: hidden;" class="imageon"></a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
@@ -40,14 +43,12 @@
                         <a class="nav-link js-scroll" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#service">Experience</a>
+                        <a class="nav-link js-scroll" href="#service">Experience & Education </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="#work">Work</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#blog">Education</a>
-                    </li>
+                   
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="#contact">Contact</a>
                     </li>
@@ -181,20 +182,34 @@
                                     </p>
                                 </div>
                             </div>
-                            <a href="assets/shortCV.pdf" target="_blank">Click here to download my Curriculum Vitae!</a>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 col-sm-12">
+                            <a  href="assets/shortCV.pdf " target="_blank" class="btn-custom">
+                                <span><i class="fa fa-cloud-download"></i></span>
+                                <span>Curriculum Vitae</span>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            <a  href="certifications.html" target="_blank" class="btn-custom">
+                                <span ><i class="fa fa-trophy"></i></span>
+                                <span>Certifications</span>
+                            </a>
+                        </div>
+                        </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
     <section id="service" class="services-mf pt-5 route">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="title-box text-center">
                         <h3 class="title-a">
-                            Experience
+                            Education & Experience
                         </h3>
                         <p class="subtitle-a">
                             The things I've been involved in, professionally.
@@ -203,113 +218,199 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="service-box">
-                        <div class="service-ico">
-                            <span class="ico-circle"><i class="ion-code-working"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h2 class="s-title">Web Development</h2>
-                            <p class="s-description text-center">
-                                July 2019 - Present<br> Website: <a href="http://ccet.ac.in">ccet.ac.in</a>
-                                <hr> Enhanced User Interface
-                                <hr> Student and Teacher Friendly.
-                                <hr> Designed, implemented and monitored web pages for continuous improvement.
-                                <hr> Also used programming capabilities in PHP, MySQL, HTML, CSS and other libraries as needed.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-box">
-                        <div class="service-ico">
-                            <span class="ico-circle"><i class="ion-stats-bars"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h2 class="s-title">Data Science</h2>
-                            <p class="s-description text-center">
-                                June 2020 - Present<br> <a href="https://www.youracclaim.com/badges/35425c46-bcd5-45c3-a051-1906456fcd2c">IBM Advanced Data Science Specialist</a>
-                                <hr> Applied knowledge in practical use.
-                                <hr> Justified architectural decisions.
-                                <hr> Understood the characteristics of different algorithms, frameworks, technologies and how they impact model performance and scalability.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-box">
-                        <div class="service-ico">
-                            <span class="ico-circle"><i class="ion-ios-paper-outline"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h2 class="s-title">Research</h2>
-                            <p class="s-description text-center">
-                                July - December 2020 (Accepted and Submitted for Publication to the Proceedings of
-Springer Book Series, Smart Innovation, Systems and Technologies)<br><a href="">An Exploratory Analysis on the Unfold of Fake News During Covid-19 Pandemic</a>
-                                <hr> Surveyed various websites and research papers.
-                                <hr> Performed Data Extraction by making a Web Crawler
-                                <hr> Used my knowledge in the Data Science domain to perform data cleaning, and analysis through visualizations.
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
+                <!-- Timeline-->
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <!--Timeline--> 
+                        <h5 class="text-dark mb-30">Research Experience</h5>
+                        <div class="timeline">
+
+                             <!--item 1-->
+                             <div class="item">
+                                <div class="content">
+                                    <h6 class="text-dark mb-0">Molecular Dynamics Simulation and Data Mining 
+                                        <span class="text-muted"> - </span>Advisor: Dr. Ravi Pratap Barnwal (Assistant Professor, Dept. of Biophysics, Panjab University)</h6>
+                                    <small class="text-muted"> Nov, 2020 - Ongoing</small>
+                                    <p class="text-dark pt-15 mb-0">Helped the team in gathering data/PDBs of required proteins through Web Scraping and using data
+                                        mining techniques. Working to find characteristic features of the interface residues, for Helix-Helix interactions
+                                        </p>
+                                </div>
+                            </div>
+                             <!--item 1-->
+                             <div class="item">
+                                <div class="content">
+                                    <h6 class="text-dark mb-0">Understanding Citizen-Government Social Media Engagement during Crisis: Shreds of Evidence from
+                                        COVID-19 Pandemic (Submitted Work)
+                                        <span class="text-muted"> - </span>Advisor: Dr. Ankit Gupta (Assistant Professor, Dept. of CSE, CCET)
+                                    </h6>
+                                    <small class="text-muted"> July, 2020 - Feb, 2021</small>
+                                    <p class="text-dark pt-15 mb-0">Worked in Data Preprocessing and implementing Clustering and OWA Operator and performing a Visual analysis of Results
+                                        using R programming
+                                        </p>
+                                </div>
+                            </div>
+                             <!--item 1-->
+                             <div class="item">
+                                <div class="content">
+                                    <h6 class="text-dark mb-0">An inquisitive prospect on the shift towards Online Form of Digital Media, before, during, and after the
+                                        COVID-19 Pandemic: A Technological Analysis
+                                        <span class="text-muted"> - </span>Advisor: Dr. Sunil K. Singh (Professor and HoD, Dept. of
+                                        CSE, CCET) </h6>
+                                    <small class="text-muted"> FEB, 2021 - Mar, 2021</small>
+                                    <p class="text-dark pt-15 mb-0">Gathered data from SimilarWeb, formulated them into different datasets as per need.Discussed the role of COVID-19 in the surge of Meeting platforms, E-Learning Platforms and alsopredicted the number of Digital Media users to rise to 796.45 Million by 2031.
+                                        </p>
+                                </div>
+                            </div>
+
+                            <!--item 1-->
+                            <div class="item">
+                                <div class="content">
+                                    <h6 class="text-dark mb-0">An Investigative Study into the Impact of Artificial Intelligence and Internet of Things in Modern Times and
+                                        Hereafter
+                                        <span class="text-muted"> - </span>Advisor: Dr. Sunil K. Singh (Professor and HoD, Dept. of
+                                        CSE, CCET) </h6>
+                                    <small class="text-muted"> OCT, 2020 - FEB, 2021</small>
+                                    <p class="text-dark pt-15 mb-0">Elaborated on the architecture of Artificial Intelligence and Internet of Things and
+                                        analyzed the trends in AI and predicted the number of connected IoT devices to increase to 65 Billion by 2032 using
+                                        forecasting.</p>
+                                </div>
+                            </div>
+                                           
+                           
+                           <!--item 1-->
+                           <div class="item">
+                            <div class="content">
+                                <h6 class="text-dark mb-0">An Exploratory Analysis on the Unfold of Fake News during Covid-19 Pandemic(Accepted and Submitted
+                                    for Publication to the Proceedings of Springer Book Series, Smart Innovation, Systems and Technologies) 
+                                    <span class="text-muted"> - </span>Dr. Ankit Gupta (Assistant Professor, Dept. of CSE, CCET) </h6>
+                                <small class="text-muted"> OCT, 2020 - FEB, 2021</small>
+                                <p class="text-dark pt-15 mb-0">Performed Data Extraction 
+                                    to fetch the Tweets to form a dataset.
+                                Performed data cleaning, and analysis through visualizations on the dataset and concluded that there was an enormous spread of the said form
+                                    of news was in the month of March, 2020 during the initial stages of COVID-19.</p>
+                            </div>
+                        </div>
+        
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-6">
+                        <h5 class="text-dark mb-30"> Education</h5>
+                        <div class="timeline"> 
+                            <!--item 1-->
+                            <div class="item">
+                                <div class="content">
+                                    <h6 class="text-dark mb-0">B.E. (Computer Science)
+                                        <span class="text-muted"> - </span> Chandigarh College of Engineering & Technology, Chandigarh</h6>
+                                    <small class="text-muted">2018 - 2022</small>
+                                    <p class="text-dark pt-15 mb-0">CGPA, After Semester 4 : 9.31/10 
+                                    </p>
+                                    <p class="text-dark pt-15 mb-0">Affiliation – Panjab University, Chandigarh, India
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            <!--item 3-->
+                        </div>
+                       
+                        
+                            <div class="col-lg-12">
+
+                                <h5 class="text-dark mb-30">Work Expericence</h5>
+                                <div class="timeline">
+                              
+                                    <!--item 2-->
+                                    <!--item 1-->
+                                                    <!--item 1-->
+                                    <div class="item">
+                                        <div class="content">
+                                            <h6 class="text-dark mb-0">Research Intern
+                                                <span class="text-muted"> - </span> Design Innovation Center, UIET, Panjab University, Chandigarh </h6>
+                                            <small class="text-muted">April, 2021 - Present</small>
+                                            <p class="text-dark pt-15 mb-0">Working in Data Exploration and Preprocessing, performing a Visual analysis of Results
+                                                using Python programming
+                </p>
+                                        </div>
+                                    </div>  
+                                    <!--item 2-->
+                
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <!--Timeline--> 
+
+                                <h5 class="text-dark mb-30"> Positions of Responsibility</h5>
+                                <div class="timeline"> 
+                                    <!--item 1-->
+                                    <div class="item">
+                                        <div class="content">
+                                            <h6 class="text-dark mb-0">Website Team- Student Lead
+                                                <span class="text-muted"> - </span> Chandigarh College of Engineering & Technology, Panjab University</h6>
+                                            <small class="text-muted">2020 - present</small>
+                                            <p class="text-dark pt-15 mb-0">Updating and Enhancing the website on regular basis. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--item 2-->
+                                    <div class="item">
+                                        <div class="content">
+                                            <h6 class="text-dark mb-0">Chairperson 
+                                                <span class="text-muted"> - </span><a href="http://ccet.ac.in/acm/index.html" target="_blank">CCET ACM Student Chapter</a>, Chandigarh </h6>
+                                            <small class="text-muted ">2021-Present</small>
+                                           
+                                        </div>
+                                    </div>
+                    
+                                   <!--item 1-->
+                                   <div class="item">
+                                    <div class="content">
+                                        <h6 class="text-dark mb-0">Website Team- Member
+                                            <span class="text-muted"> - </span> Chandigarh College of Engineering & Technology, Panjab University</h6>
+                                        <small class="text-muted">2019 -2020</small>
+                                        <p class="text-dark pt-15 mb-0">Updating and Enhancing the website on regular basis. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--item 2-->
+                                <div class="item">
+                                    <div class="content">
+                                        <h6 class="text-dark mb-0">Executive Member 
+                                            <span class="text-muted"> - </span><a href="http://ccet.ac.in/acm/index.html" target="_blank">CCET ACM Student Chapter</a>, Chandigarh </h6>
+                                        <small class="text-muted ">2019-2021</small>
+                                       
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                            <figure class="highcharts-figure" >
+                                <div id="container"></div>
+                            </figure></div>
+                    
+                    </div>
+
+
+
+
+                    
+                </div>
         </div>
+
+        
     </section>
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
-        <div class="overlay-mf"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 col-lg-3">
-                    <div class="counter-box">
-                        <div class="counter-ico">
-                            <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-                        </div>
-                        <div class="counter-num">
-                            <p class="counter">10</p>
-                            <span class="counter-text">PROJECTS COMPLETED</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-lg-3">
-                    <div class="counter-box pt-4 pt-md-0">
-                        <div class="counter-ico">
-                            <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
-                        </div>
-                        <div class="counter-num">
-                            <p class="counter">2</p>
-                            <span class="counter-text">YEARS OF EXPERIENCE</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-lg-3">
-                    <div class="counter-box pt-4 pt-md-0">
-                        <div class="counter-ico">
-                            <span class="ico-circle"><i class="ion-ios-people"></i></span>
-                        </div>
-                        <div class="counter-num">
-                            <p class="counter">12</p>
-                            <span class="counter-text">WORKSHOPS AND EVENTS, includes attended, organized and managed ones.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-lg-3">
-                    <div class="counter-box pt-4 pt-md-0">
-                        <div class="counter-ico">
-                            <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-                        </div>
-                        <div class="counter-num">
-                            <p class="counter">11</p>
-                            <span class="counter-text">Certifications</span><br>
-                            <a href="certifications.html" style="color:antiquewhite">Click here to view more...</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+
+
+
+
+
+
+
+
     <section id="work" class="portfolio-mf sect-pt4 route">
         <div class="container">
             <div class="row">
@@ -571,7 +672,7 @@ Springer Book Series, Smart Innovation, Systems and Technologies)<br><a href="">
                                 </a>
                                 <a href="https://www.linkedin.com/in/muskaanchopra712/">
                                     <img src="img/muskaan.jfif" alt="" class="avatar rounded-circle">
-                                    <span class="author">Muskan Chopra</span>
+                                    <span class="author">Muskaan Chopra</span>
                                 </a>
                                 <a href="#">
                                     <img src="img/ethan.jfif" alt="" class="avatar rounded-circle">
@@ -592,210 +693,7 @@ Springer Book Series, Smart Innovation, Systems and Technologies)<br><a href="">
         </div>
     </section>
     <!--/ Section Portfolio End /-->
-
-    <!--/ Section Testimonials Star /-->
-    <!--
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
-        <div class="overlay-mf"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="testimonial-mf" class="owl-carousel owl-theme">
-                        <div class="testimonial-box">
-                            <div class="author-test">
-                                <img src="img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
-                                <span class="author">Xavi Alonso</span>
-                            </div>
-                            <div class="content-test">
-                                <p class="description lead">
-                                      </p>
-                                <span class="comit"><i class="fa fa-quote-right"></i></span>
-                            </div>
-                        </div>
-                        <div class="testimonial-box">
-                            <div class="author-test">
-                                <img src="img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
-                                <span class="author">Marta Socrate</span>
-                            </div>
-                            <div class="content-test">
-                                <p class="description lead">
-                                      </p>
-                                <span class="comit"><i class="fa fa-quote-right"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
--->
-    <section id="blog" class="blog-mf sect-pt4 route">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="title-box text-center">
-                        <h3 class="title-a">
-                            Education
-                        </h3>
-                        <p class="subtitle-a">
-                            “The beautiful thing about learning is that no one can take it away from you.” —B.B. King
-                        </p>
-                        <div class="line-mf"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card mb-4 text-center">
-                        <div class="pt-4">
-                            <i class="fa fa-graduation-cap fa-5x edu-icons"></i>
-                        </div>
-                        <div class="card-body pb-0">
-                            <p>2018 - 2022</p>
-                            <h5 class="card-title">Chandigarh College Of Engineering And Technology, Sector-26, Chandigarh</h5>
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Affiliated to Panjab University, Chandigarh, India</li>
-                                <li class="list-group-item">CGPA, After Semester 4: 9.31/10</li>
-                                <li class="list-group-item"></li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card mb-4 text-center">
-                        <div class="pt-4">
-                            <i class="fa fa-university fa-5x"></i>
-                        </div>
-                        <div class="card-body pb-0">
-                            <p>2016 - 2018</p>
-                            <h5 class="card-title">Govt. Model Sr. Sec School, Sector-35D, Chandigarh, India</h5>
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Affiliated to Central Board of Secondary Education, New Delhi, India</li>
-                                <li class="list-group-item">Percentage, Class XII: 90.80%</li>
-                                <li class="list-group-item"></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card mb-4 text-center">
-                        <div class="pt-4">
-                            <i class="fa fa-university fa-5x"></i>
-                        </div>
-                        <div class="card-body pb-0">
-                            <p>2013 - 2016</p>
-                            <h5 class="card-title">Tender Heart School, Sector-33B, Chandigarh, India</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Affiliated to Council for the Indian School Certificate Examinations, New Delhi, India</li>
-                                <li class="list-group-item">Percentage, Class X: 95.40%</li>
-                                <li class="list-group-item"></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <section id="hobby" class="blog-mf sect-pt4 route">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="title-box text-center">
-                        <h4 class="">
-                            Ahmmm too much of professionalism, here's what I do apart from work!
-                        </h4>
-                        <p class="subtitle-a">
-                            “You never lose a dream, it just incubates as a hobby.” —Larry Page
-                        </p>
-                        <div class="line-mf"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="img/yoga1.jpg" data-lightbox="gallery-mf">
-                            <div class="work-img">
-                                <img src="img/yoga1.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="work-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Yoga</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">Practioner since past</span> / <span class="w-date">7 years</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="w-like">
-                                            <span class="ion-ios-plus-outline"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="img/india.jpg" data-lightbox="gallery-mf">
-                            <div class="work-img">
-                                <img src="img/india.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="work-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Cricket</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">Observing & Playing</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="w-like">
-                                            <span class="ion-ios-plus-outline"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="img/yoga2.jpg" data-lightbox="gallery-mf">
-                            <div class="work-img">
-                                <img src="img/yoga2.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="work-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">International Yoga Day 2018</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="w-like">
-                                            <span class="ion-ios-plus-outline"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
+   
     <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
         <div class="overlay-mf"></div>
         <div class="container">
@@ -922,7 +820,117 @@ Springer Book Series, Smart Innovation, Systems and Technologies)<br><a href="">
     </section>
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
- 
+ <script>
+     function getPointCategoryName(point, dimension) {
+  var series = point.series,
+    isY = dimension === 'y',
+    axis = series[isY ? 'yAxis' : 'xAxis'];
+  return axis.categories[point[isY ? 'y' : 'x']];
+}
+
+Highcharts.chart('container', {
+  legend: {
+    enabled: false
+  },
+  chart: {
+    type: 'heatmap',
+    height:350,
+    width:500,
+    marginTop: 60,
+    marginBottom: 100,
+    plotBorderWidth: 1,
+    backgroundColor: null
+  },
+   plotOptions: {
+        series: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+  title: {
+    text: "Hover Over Me!"
+  },
+  credits: {
+        enabled: false
+    },
+  exporting: {
+        enabled: false
+    },
+  xAxis: {
+    categories: ['Certifications', 'Projects', 'Proficiency (on a scale of 10)'],
+    labels: {
+    enabled: false
+  }
+  },
+
+  yAxis: {
+    categories: ['Research', 'Data Science', 'Web Dev'],
+    labels: {
+    enabled: false
+  },
+    title: null,
+    reversed: true
+  },
+
+  accessibility: {
+    point: {
+      descriptionFormatter: function (point) {
+        var ix = point.index + 1,
+          xName = getPointCategoryName(point, 'x'),
+          yName = getPointCategoryName(point, 'y'),
+          val = point.value;
+        return ix + '. ' + xName + ' sales ' + yName + ', ' + val + '.';
+      }
+    }
+  },
+
+  colorAxis: {
+    min: 0,
+    minColor: '#FFFFFF',
+    maxColor: Highcharts.getOptions().colors[0]
+  },
+
+  legend: {
+    enabled: false
+  },
+
+  tooltip: {
+    formatter: function () {
+      return '<b></b>' + getPointCategoryName(this.point, 'x') + '<br><b>' +
+        this.point.value + '</b> </br></b>' + getPointCategoryName(this.point, 'y');
+    }
+  },
+
+  series: [{
+    name: 'Work',
+    borderWidth: 1,
+    data: [[0, 0, 0], [0, 1, 5], [0, 2, 6], [1, 0, 9], [1, 1, 4], [1, 2, 8], [2, 0, 6], [2, 1, 5], [2, 2, 7]],
+    dataLabels: {
+      enabled: true,
+      color: '#000000'
+    }
+  }],
+
+  responsive: {
+    rules: [{
+      condition: {
+        maxWidth: 500
+      },
+      chartOptions: {
+        yAxis: {
+          labels: {
+            formatter: function () {
+              return this.value.charAt(0);
+            }
+          }
+        }
+      }
+    }]
+  }
+
+});
+ </script>
 
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/jquery/jquery-migrate.min.js"></script>
